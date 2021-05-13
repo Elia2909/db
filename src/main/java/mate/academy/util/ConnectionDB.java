@@ -20,9 +20,10 @@ public class ConnectionDB {
             Properties dbProperties = new Properties();
             dbProperties.put("user", "root");
             dbProperties.put("password", "Ilia290900RR");
+
             return DriverManager.getConnection("jdbc:mysql://localhost:3306/liblary_db", dbProperties);
         } catch (SQLException throwables) {
-            throw new RuntimeException("Cant create connection");
+            throw new RuntimeException("Cant create connection", throwables);
         }
     }
 }

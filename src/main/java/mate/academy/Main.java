@@ -11,10 +11,8 @@ public class  Main {
         LiteraryFormat format = new LiteraryFormat();
         format.setTitle("proza");
         LiteraryFormatDao literaryFormatDao = new LiteraryDaoImpl();
-        /*LiteraryFormat savedFormate = literaryFormatDao.create(format);*/
-        /*System.out.println(savedFormate);*/
-
-    /*    System.out.println(literaryFormatDao.deleted(savedFormate.getId()));*/
+        LiteraryFormat savedFormate = literaryFormatDao.create(format);
+        System.out.println("Saved format:" + savedFormate);
 
         literaryFormatDao.getAll().forEach(System.out::println);
     }

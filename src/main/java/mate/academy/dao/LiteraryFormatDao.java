@@ -7,7 +7,7 @@ import java.util.List;
 public interface LiteraryFormatDao {
     List<LiteraryFormat> getAll();
 
-/*    LiteraryFormat create(LiteraryFormat format);*/
+    LiteraryFormat create(LiteraryFormat format);
 
-   /* boolean deleted(Long id);*/
+    boolean deleted(Long id);
 }
